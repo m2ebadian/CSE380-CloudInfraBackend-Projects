@@ -1,11 +1,23 @@
-# CSE380-CloudInfraBackend-Projects
-Three backend projects for CSE380 (Spring 2025) built with Flask and SQLite3, covering user authentication, a movie rating system, and a Dockerized microservices grocery store application.
+This repository showcases three backend projects developed for CSE380 (Spring 2025), focusing on secure authentication systems, database-driven applications, and microservices with Dockerized deployment. These projects demonstrate industry-relevant skills in backend development, security, and distributed systems.
 
 
 # CSE380 Spring 2025 Projects
 
 This repository contains three backend projects developed for CSE380 (Spring 2025).  
 All projects are implemented using **Flask** and **SQLite3**, following strict security and parameterized-query requirements.
+
+
+## Tech Stack
+- Programming Language: Python (3.11+)
+- Web Framework: Flask (3.x)
+- Databases: SQLite3 (with parameterized queries to prevent SQL injection)
+- Authentication & Security:
+- SHA256 hashing with salts (hashlib)
+- JSON Web Tokens (JWT) implemented from scratch with HMAC (hmac, base64)
+- Inter-service Communication (Project 3): Python requests module for HTTP-based microservices communication
+- Containerization: Docker (5 containers orchestrated via docker compose)
+
+
 
 ## Projects
 
