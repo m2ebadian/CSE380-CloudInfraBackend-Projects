@@ -1,0 +1,13 @@
+FROM python:latest
+
+WORKDIR /app
+
+COPY products/app.py .
+COPY products/products.sql .
+COPY key.txt .
+
+RUN pip install flask requests
+
+EXPOSE 5000
+
+CMD ["flask", "run", "--host=0.0.0.0", "--port=5000"]

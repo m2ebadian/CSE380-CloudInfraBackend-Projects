@@ -1,0 +1,49 @@
+services:
+  user:
+    build:
+      context: .
+      dockerfile: users/Dockerfile.users
+    ports:
+      - "9000:5000"
+    networks:
+      - baghereb
+
+  products:
+    build:
+      context: .
+      dockerfile: products/Dockerfile.products
+    ports:
+      - "9001:5000"
+    networks:
+      - baghereb
+
+  search:
+    build:
+      context: .
+      dockerfile: search/Dockerfile.search
+    ports:
+      - "9002:5000"
+    networks:
+      - baghereb
+
+  orders:
+    build:
+      context: .
+      dockerfile: orders/Dockerfile.orders
+    ports:
+      - "9003:5000"
+    networks:
+      - baghereb
+
+  logs:
+    build:
+      context: .
+      dockerfile: logs/Dockerfile.logs
+    ports:
+      - "9004:5000"
+    networks:
+      - baghereb
+
+networks:
+  baghereb:
+    driver: bridge
